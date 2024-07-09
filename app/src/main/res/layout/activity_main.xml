@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароль состоит из 4 цифр"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        style="@style/TextPrimary" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Введите пароль"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/accent" />
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Угадать"
+        style="@style/ButtonPrimary" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGuess"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextPrimary" />
+
+    <Button
+        android:id="@+id/buttonShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Показать пароль"
+        style="@style/ButtonAccent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonShowPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextPrimary" />
+
+    <Button
+        android:id="@+id/buttonNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Новый пароль"
+        style="@style/ButtonPrimary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNewPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextSecondary" />
+
+</RelativeLayout>
